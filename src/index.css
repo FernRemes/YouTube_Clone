@@ -1,0 +1,109 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(114, 113, 113);
+  border-radius: 10px;
+  height: 200px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.category-btn:hover {
+  background-color: rgba(255,255,255,0.1);
+  color: white !important;
+}
+
+.category-btn:hover span{
+  color: white !important;
+}
+
+.react-player {
+  height: 77vh !important;
+  width: 100% !important;
+}
+
+.search-bar{
+  border: none;
+  outline:none;
+  background-color: white;
+  width:350px;
+}
+
+.sidebar {
+  width: 200px; /* Expanded width */
+  transition: width 0.3s ease;
+}
+
+.sidebar.collapsed {
+  width: 45px; /* Collapsed width to show only icons */
+}
+
+.category-btn{
+  font-weight: bold !important;
+  text-transform: capitalize;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  cursor:pointer;
+  background: transparent;
+  outline: none;
+  border: none;
+
+  padding: 8px 15px;
+  margin: 5px 0px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.category-btn span{
+  color: #e8e8e8 !important;
+}
+
+@media screen and (max-width: 900px) {
+  .category-btn{
+    margin: 10px;
+  }
+  .sidebar {
+    width: 100%;
+  }
+  .sidebar.collapsed {
+    width: 100%; /* incase of user error */
+  }
+}
+
+@media screen and (max-width:800px){
+  .copyright{
+    display:none !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .scroll-horizontal {
+    overflow: auto !important;
+  }
+  
+
+  .react-player {
+    height: 45vh !important;
+  }
+  .search-bar{
+    width: 75px;
+  }
+}
