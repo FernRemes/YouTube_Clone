@@ -29,9 +29,9 @@ export const categories = [
   { name: 'Crypto', icon: <DeveloperModeIcon style={{ width: '20px', height: '20px' }} /> },
 ];
 
-export const demoThumbnailUrl = 'https://i.ibb.co/G2L2Gwp/API-Course.png';
-export const demoChannelUrl = '/channel/UCmXmlB4-HJytD7wek0Uo97A';
-export const demoVideoUrl = '/video/GDa8kZLNhJ4';
-export const demoChannelTitle = 'JavaScript Mastery';
-export const demoVideoTitle = 'Build and Deploy 5 JavaScript & React API Projects in 10 Hours - Full Course | RapidAPI';
+export const demoThumbnailUrl = '../assets/demo_thumbnail.png';
+export const demoChannelUrl = '/c/myre';
+export const demoVideoUrl = '/video/D36g2b_PxB0';
+export const demoChannelTitle = 'myre';
+export const demoVideoTitle = 'HORROR GAME AFFILIATE CELEBRATION STREAM! [IRON LUNG + INDIE GAMES]';
 export const demoProfilePicture = 'http://dergipark.org.tr/assets/app/images/buddy_sample.png'

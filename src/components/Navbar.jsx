@@ -19,7 +19,7 @@ function Navbar() {
         direction = "row" 
         alignItems = "center" 
         p = {1} 
-        sx = {{position: 'sticky', background: '#0f0f0f', top: 0, justifyContent: 'space-between', ml: { xs: -1, md: 2} }}
+        sx = {{position: 'sticky', background: '#0f0f0f', top: {xs: "-2px", md: 0}, justifyContent: 'space-between', ml: { xs: -1, md: 2}, zIndex: 100 }}
     >  
         <Stack direction = "row" alignItems="center" spacing = {2}>
             <Box

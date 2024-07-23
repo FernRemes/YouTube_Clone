@@ -25,15 +25,6 @@ a {
   background-color: transparent;
 }
 
-.category-btn:hover {
-  background-color: rgba(255,255,255,0.1);
-  color: white !important;
-}
-
-.category-btn:hover span{
-  color: white !important;
-}
-
 .react-player {
   height: 77vh !important;
   width: 100% !important;
@@ -49,6 +40,7 @@ a {
 .sidebar {
   width: 200px; /* Expanded width */
   transition: width 0.3s ease;
+  
 }
 
 .sidebar.collapsed {
@@ -76,12 +68,67 @@ a {
   color: #e8e8e8 !important;
 }
 
+.category-btn:hover {
+  background-color: rgba(255,255,255,0.1);
+  color: white !important;
+}
+
+.category-btn:hover span{
+  color: white !important;
+}
+
+.category-btn.selected {
+  background-color: rgba(255,255,255,0.1);
+}
+
+.gradient-banner {
+  height: 300px;
+  background: linear-gradient(130deg, rgba(0,0,0,1) 14%, rgba(135,0,0,1) 61%, rgba(255,0,0,1) 100%);
+  z-index: 10;
+  animation: DesignA11y 45s ease infinite;
+  background-size: 400% 400%; 
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+@-webkit-keyframes DesignA11y {
+  0% { background-position: 0% 2%; }
+  50% { background-position: 100% 99%; }
+  100% { background-position: 0% 2%; }
+}
+
+@-moz-keyframes DesignA11y {
+  0% { background-position: 0% 2%; }
+  50% { background-position: 100% 99%; }
+  100% { background-position: 0% 2%; }
+}
+
+@keyframes DesignA11y {
+  0% { background-position: 0% 2%; }
+  50% { background-position: 100% 99%; }
+  100% { background-position: 0% 2%; }
+}
+
+
 @media screen and (max-width: 900px) {
   .category-btn{
     margin: 10px;
+    background-color: rgba(255,255,255,0.1);
+  }
+
+  .category-btn.selected {
+    background-color: rgb(231, 231, 231)!important;
+
+  }
+
+  .category-btn.selected span{
+    color: #101010 !important;
   }
   .sidebar {
     width: 100%;
+    background-color: #0f0f0f;
+    top: 56px;
+    
   }
   .sidebar.collapsed {
     width: 100%; /* incase of user error */
